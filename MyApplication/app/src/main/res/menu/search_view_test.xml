@@ -1,0 +1,13 @@
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/search"
+        android:actionViewClass="android.widget.SearchView"
+        android:icon="@mipmap/ic_launcher"
+        android:showAsAction="ifRoom|withText"
+        android:title="搜索"
+
+        >
+    </item>
+
+</menu>

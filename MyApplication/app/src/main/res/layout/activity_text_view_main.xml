@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_text_view_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.gswtek.huyd.widgets.TextViewMainActivity">
+
+    <Button
+        android:text="变大"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/btnTVBig"/>
+
+    <Button
+        android:text="变小"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/btnTVBig"
+        android:layout_marginStart="31dp"
+        android:id="@+id/btnTVSmall"/>
+
+    <Button
+        android:text="变形"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="38dp"
+        android:id="@+id/btnTVChange"
+        android:layout_below="@+id/btnTVSmall"
+        android:layout_alignStart="@+id/btnTVSmall"/>
+
+    <Button
+        android:text="变红"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnTVRed"
+        android:layout_alignBaseline="@+id/btnTVChange"
+        android:layout_alignBottom="@+id/btnTVChange"
+        android:layout_toStartOf="@+id/btnTVSmall"/>
+
+    <TextView
+        android:text="This is a test font !"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnTVChange"
+        android:layout_marginTop="120dp"
+        android:id="@+id/tvFontChange"
+        android:layout_alignEnd="@+id/btnTVChange"
+        android:textSize="24sp"/>
+</RelativeLayout>

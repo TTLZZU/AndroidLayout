@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_progress_bar_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.gswtek.huyd.widgets.ProgressBarMainActivity">
+
+    <TextView
+        android:id="@+id/tvLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="46dp"
+        android:text="大"/>
+
+    <TextView
+        android:id="@+id/tvMedium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/tvLarge"
+        android:layout_below="@+id/tvLarge"
+        android:layout_marginTop="76dp"
+        android:text="中"/>
+
+    <TextView
+        android:id="@+id/tvSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/tvMedium"
+        android:layout_marginTop="93dp"
+        android:text="小"/>
+
+    <ProgressBar
+        android:id="@+id/pbLarge"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="71dp"
+        android:layout_marginTop="27dp"/>
+
+    <ProgressBar
+        android:id="@+id/pbMedium"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/pbLarge"
+        android:layout_alignTop="@+id/tvMedium"/>
+
+    <ProgressBar
+        android:id="@+id/pbSmall"
+        style="?android:attr/progressBarStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/pbMedium"
+        android:layout_alignTop="@+id/tvSmall"/>
+
+    <ProgressBar
+        android:id="@+id/pbHorizontal"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/pbSmall"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/tvSmall"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="90dp"/>
+
+    <Button
+        android:id="@+id/btnProgressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:text="加载"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/pbHorizontal"
+        android:layout_marginStart="45dp"/>
+
+</RelativeLayout>

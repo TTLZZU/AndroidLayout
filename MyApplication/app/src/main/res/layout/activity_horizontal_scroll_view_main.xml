@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<HorizontalScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+                      xmlns:tools="http://schemas.android.com/tools"
+                      android:layout_width="match_parent"
+                      android:layout_height="match_parent"
+                      android:padding="10dp"
+                      tools:context="com.gswtek.huyd.containers.ScrollViewMainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="200dp"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/banner"/>
+
+        <Button
+            android:id="@+id/knowMoreButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="KNOW MORE"/>
+
+        <TextView
+            android:id="@+id/titleTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="白宫支持台湾回归中国"
+            android:textAppearance="?android:attr/textAppearanceLarge"/>
+
+        <TextView
+            android:id="@+id/contentTextView"
+            android:layout_width="622dp"
+            android:layout_height="match_parent"
+            android:text="台湾本来就是中国的，只是一些不利于祖国团结的不法分子在搅乱政治而已。回归中国，特指中国清朝时所丧失的一些领土，在之后被中国政府所接收的事件。
+“台湾光复”，是指台湾自清朝割让予日本后，由中华民国在二战结束后接收。然而，中华民国当时有否依法取得台湾主权，仍存在争议。
+“香港回归”，中华人民共和国对香港行使主权，使香港自清朝割让英国后主权移交中国。
+“澳门回归”，中华人民共和国对澳门行使主权，使澳门被葡萄牙占领后政权移交中国。
+“台湾回归”，是指中华人民共和国欲以一国两制的方式和平统一中国，将台湾纳入其统治之下。部分人认为统治台湾的中华民国并未同意此构想。但其实两岸双方曾达成［九二共识］。台湾本来就是中国的，只是一些不利于祖国团结的不法分子在搅乱政治而已。回归中国，特指中国清朝时所丧失的一些领土，在之后被中国政府所接收的事件。
+“台湾光复”，是指台湾自清朝割让予日本后，由中华民国在二战结束后接收。然而，中华民国当时有否依法取得台湾主权，仍存在争议。
+“香港回归”，中华人民共和国对香港行使主权，使香港自清朝割让英国后主权移交中国。
+“澳门回归”，中华人民共和国对澳门行使主权，使澳门被葡萄牙占领后政权移交中国。
+“台湾回归”，是指中华人民共和国欲以一国两制的方式和平统一中国，将台湾纳入其统治之下。部分人认为统治台湾的中华民国并未同意此构想。但其实两岸双方曾达成［九二共识］。"
+            android:textAppearance="?android:attr/textAppearanceSmall"/>
+
+    </LinearLayout>
+</HorizontalScrollView>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_space_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:dividerPadding="5dp"
+    android:orientation="horizontal"
+    android:showDividers="middle">
+    tools:context="com.gswtek.huyd.widgets.SpaceMainActivity">
+
+    <TextView
+        style="@style/AlertDialog.AppCompat"
+        android:layout_width="126dp"
+        android:layout_height="wrap_content"
+        android:text="这是左边"/>
+
+    <Space
+        android:layout_width="78dp"
+        android:layout_height="10dp"/>//添加间距
+
+    <TextView
+        style="@style/AlertDialog.AppCompat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="这是右边"/>
+
+
+</LinearLayout>
